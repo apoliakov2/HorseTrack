@@ -1,0 +1,11 @@
+<div id="console" class="cmd" ng-keypress="onKeyPress($event)" tabindex="0" scroll-glue>
+  <div ng-repeat="line in output track by $index">
+    <div class="console-font" ng-bind="line | rightArrow"></div>
+
+  </div>
+  <span class="console-font" ng-bind="input | rightArrow"></span>
+  <span ng-bind="caret" ng-class="{cursorHid: cursorHidden}"></span>
+</div>
+<div class="launchButton">
+  <input type="button" ng-hide="isInitialized" value="Start app" ng-click="init()"/>
+</div>
