@@ -1,4 +1,4 @@
-describe("Test 'commandsService' service", function() {
+describe('Test "commandsService" service', function() {
 
   var commands, inventoryService, horsesService;
 
@@ -65,4 +65,4 @@ describe("Test 'commandsService' service", function() {
     expect(res).toEqual(-1);
   });
 
-})
+});

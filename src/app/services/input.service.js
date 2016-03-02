@@ -2,8 +2,7 @@ export function inputService($log, horsesService, inventoryService, commandsServ
   'ngInject';
 
   var input = '',
-    output = [],
-    isInitialized = true;
+    output = [];
 
   // parsing the particular key that user just pressed;
   // If Enter - executes the whole command

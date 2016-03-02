@@ -1,4 +1,4 @@
-describe("Test 'MainController' controller", function() {
+describe('Test "MainController" controller', function() {
 
   var $scope;
 
@@ -11,12 +11,12 @@ describe("Test 'MainController' controller", function() {
     $controller('MainController', {$scope: $scope});
   }));
 
-  it("Checks if init() and quitApp() functions are defined", function() {
+  it('Checks if init() and quitApp() functions are defined', function() {
     expect($scope.init).not.toBeUndefined();
     expect($scope.quitApp).not.toBeUndefined();
   });
 
-  it("calls init() function that calls horsesService.reset() and initializes scope model", function() {
+  it('Should call init() function that calls horsesService.reset() and initializes scope model', function() {
     $scope.init();
 
     expect($scope.output).not.toBeUndefined();
@@ -28,7 +28,7 @@ describe("Test 'MainController' controller", function() {
     expect($scope.isInitialized).not.toBeUndefined();
   });
 
-  it("calls quitApp() and checks that main variables in scope are empty", function() {
+  it('Should call quitApp() and check that the main variables in the scope are empty', function() {
     $scope.quitApp();
     expect($scope.output).toEqual('');
     expect($scope.input).toEqual('');

@@ -1,4 +1,4 @@
-describe("Test 'horseTrackErrors' factory", function() {
+describe('Test "horseTrackErrors"" factory', function() {
 
   var horseTrackErrors;
 
@@ -9,9 +9,9 @@ describe("Test 'horseTrackErrors' factory", function() {
     });
   });
 
-  it("Should return predefined error message when calling with code 100", function() {
+  it('Should return predefined error message when calling with code 100', function() {
     var res = horseTrackErrors.getError(100, 'asd');
-    expect(res).toEqual("Invalid Command: asd");
+    expect(res).toEqual('Invalid Command: asd');
   })
 
 });
