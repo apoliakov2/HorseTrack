@@ -6,7 +6,8 @@ describe("Test 'commandsService' service", function() {
     angular.mock.module('horsetrack');
 
     inventoryService = {
-        restock: jasmine.createSpy('restock')
+        restock: jasmine.createSpy('restock'),
+        dispenseCash: jasmine.createSpy('dispenseCash')
     };
 
     horsesService = {
@@ -49,7 +50,7 @@ describe("Test 'commandsService' service", function() {
     expect(horsesService.setWinningHorse).toHaveBeenCalled();
   });
 
-  it('Should call "setHorseWagedOn" function of horsesService when type "1 32"', function() {
+  it('Should call "setHorseWagedOn" horsesService when type "1 32"', function() {
     commands.executeCommand('1 32');
     expect(horsesService.setHorseWagedOn).toHaveBeenCalled();
   });
